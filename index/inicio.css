@@ -44,7 +44,6 @@ h4 {
     color: white;
     margin-top: 295px;
     margin-left: 1160px;
-    font
     font-weight: bolder;
     font-size: 32px;
     font-family: "Barrio", system-ui;  
@@ -57,6 +56,6 @@ h4 {
    font-variation-settings:
        'FILL' 1,    /* Ícone preenchido (1) ou contorno (0) */
        'wght' 90,  /* Espessura da linha */
-       'GRAD' 200
+       'GRAD' 300
 }
   

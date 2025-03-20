@@ -1,0 +1,27 @@
+h3{
+    position: absolute;
+    margin-left: 5px;
+    margin-top: 7px;
+    margin-right: 1250px;
+    color: rgb(2, 2, 2);
+    font-family: "Barrio", system-ui;
+    font-size: 30px;
+    text-align: center;
+ }
+ header {
+    position: relative;
+    margin-top: 0;
+    height: 50px;
+    background-color: rgb(17, 123, 172);
+    border-radius: 50px;
+ }
+ h4{
+    position: absolute;
+    margin-left: 1299px;
+    margin-top: 7px;
+    color: rgb(2, 2, 2);
+    font-family: "Barrio", system-ui;
+    font-size: 30px;
+    text-align: center;
+    font-weight: bolder;
+ }

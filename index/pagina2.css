@@ -1,0 +1,68 @@
+
+ul {
+    list-style-type: none;
+
+}
+li {
+    display: inline-block;
+    margin-right: 15px;
+    margin-left: 25px;
+    margin-top: 25px;
+}
+img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    border-radius: 70px;
+    border-style: double;
+    border-color: rgb(59, 43, 8);
+    border-width: 2px;
+    cursor: pointer; 
+}
+h1{
+    position: relative;
+    margin-left: 450px;
+    margin-top: 20px;
+    font-weight: bolder;
+    font-size: 45px;
+    font-family: "Barrio", system-ui;
+    color: rgb(65, 60, 60)  ;
+}
+.material-symbols-outlined {
+    position: absolute;
+    margin-top: 60px;
+    margin-left: 615px;
+    font-size: 70px;  /* Tamanho do ícone */
+    color: red;       /* Cor do ícone */
+    font-variation-settings:
+        'FILL' 1,    /* Ícone preenchido (1) ou contorno (0) */
+        'wght' 90,  /* Espessura da linha */
+        'GRAD' 300
+ }
+ h3{
+    position: absolute;
+    margin-left: 5px;
+    margin-top: 7px;
+    margin-right: 1250px;
+    color: rgb(2, 2, 2);
+    font-family: "Barrio", system-ui;
+    font-size: 30px;
+    text-align: center;
+ }
+ header {
+    position: relative;
+    margin-top: 0;
+    height: 50px;
+    background-color: rgb(17, 123, 172);
+    border-radius: 50px;
+ }
+ h4{
+    position: absolute;
+    margin-left: 1280px;
+    margin-top: 7px;
+    color: rgb(2, 2, 2);
+    font-family: "Barrio", system-ui;
+    font-size: 30px;
+    text-align: center;
+    font-weight: bolder;
+ }
