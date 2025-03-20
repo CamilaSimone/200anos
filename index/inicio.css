@@ -1,13 +1,62 @@
 body {
-    background-image: url('IMG_20241001_213815_253.png'); /* Nome da sua imagem */
-    background-repeat: no-repeat; /* Evita que a imagem se repita */
-    height: 70vh; /* Define altura da tela inteira */
-    margin: 0;
-    color: white; /* Para melhor contraste com o fundo */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-}
-header, h1, h2, h3 {
-margin-top: 30px;
-margin-left: 25px;
-}
 
+        background-image: url('IMG_20241001_213815_253.png'); /* Verifique o caminho */
+        background-repeat: no-repeat;
+        background-size: cover; /* Faz a imagem cobrir toda a tela */
+        height: 100vh; /* Define altura como 100% da tela */
+        margin: 0;
+        color: black; /* Melhor contraste */
+
+}
+header {
+    margin-top: 50px;
+    margin-left: 33px;
+    font-size: larger;
+    position: absolute;
+    color: white;
+    font-size: 70px;
+}
+ h1 {
+    text-align: center;
+    margin-left: 30px;
+    margin-top: 70px;
+    font-family: "Barrio", system-ui;
+    font-weight: bolder;
+    font-style: normal;
+ }
+ h3{
+    margin-left: 210px;
+    margin-top: -90px;
+    position: absolute;
+    font-weight: bolder;
+    font-family: "Barrio", system-ui;
+
+ }
+ h2 {
+    text-align: center;
+    margin-left: 45px;
+    margin-top: 60px;
+    font-weight: bolder;
+    font-family: "Barrio", system-ui;
+ }
+h4 {
+    position: absolute;
+    color: white;
+    margin-top: 295px;
+    margin-left: 1160px;
+    font
+    font-weight: bolder;
+    font-size: 32px;
+    font-family: "Barrio", system-ui;  
+}
+.material-symbols-outlined {
+   position: absolute;
+   margin-left: -5px;
+   font-size: 600px;  /* Tamanho do ícone */
+   color: red;       /* Cor do ícone */
+   font-variation-settings:
+       'FILL' 1,    /* Ícone preenchido (1) ou contorno (0) */
+       'wght' 90,  /* Espessura da linha */
+       'GRAD' 200
+}
+  
