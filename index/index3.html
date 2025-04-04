@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt">
 <head>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=mail_lock" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
     <link href="https://fonts.googleapis.com/css2?family=Barrio&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -22,8 +22,12 @@
     <button id="abrirPopup2" onclick="abrirPopup2()">Dica 2</button>
 
     <div id="popupOverlay2" class="overlay">
-        <div class="popup">
-            <p>Vai na dica 3 bebê!</p>
+        <div class="popup-content">
+            <p>Dia que elogiei teus 👀</p>
+            <input type="password" id="senhaInput1" placeholder="**/**/****">
+            <button class="popup-button" onclick="verificarSenha()">AVERIGUAR</button>
+            <p id="mensagemErro" class="error"></p>
+            <p>Dica 3 só dps que tu acertar essa!</p>
         </div>
     </div>
 
@@ -31,7 +35,8 @@
 
     <div id="popupOverlay3" class="overlay">
         <div class="popup">
-            <p>Vai na dica 4 bebê!</p>
+            <p>Vai na dica 5 bebê!</p>
+            <p id="mensagemErro2" class="error"></p>
         </div>
     </div>
 
@@ -39,33 +44,85 @@
 
     <div id="popupOverlay4" class="overlay">
         <div class="popup">
-            <p>Vai na dica 5 bebê!</p>
+            <p>Vai na dica 6 bebê!</p>
         </div>
     </div>
 
     <button id="abrirPopup5" onclick="abrirPopup5()">Dica 5</button>
 
     <div id="popupOverlay5" class="overlay">
-        <div class="popup">
-            <p>Vai na dica 6 bebê!</p>
+        <div class="popup-content">
+            <p> Dia mundial do pinguim? </p>
+            <input type="password" id="senhaInput2" placeholder="**/**">
+            <button class="popup-button" onclick="verificarSenha2()">AVERIGUAR</button>
+            <p id="mensagemErro" class="error"></p>
+            <p>Dica 4 dps que tu acertar essa!</p>
         </div>
     </div>
 
     <button id="abrirPopup6" onclick="abrirPopup6()">Dica 6</button>
 
     <div id="popupOverlay6" class="overlay">
-        <div class="popup">
-            <p>Vai na dica 5 bebê!</p>
+        <div class="popup-content">
+            <p> Chuta aí uma data </p>
+            <input type="password" id="senhaInput3" placeholder="**/**/****">
+            <button id= "botão" class="popup-button" onclick="verificarSenha3()">AVERIGUAR</button>
+            <p id="mensagemErro" class="error"></p>
+            <p>Depois dessa tá liberadoooo</p>
         </div>
     </div>
 
     </header>
 
-    <h1>Desbloqueie o cadeado! (se conseguir)😘</h1>
-
+    <h1 id="frase">Desbloqueie o cadeado! (se conseguir)😘</h1>
+    <h3 id="voltar"> <<< </h3>
    <main>
-   
-        <span class="material-symbols-outlined">mail_lock</span>
+    
+        <audio id="audioPlayer">
+        <source src="tema da vitoria.mp3">
+        </audio>
+
+        <div id="popupOverlay7" class="overlay2">
+            <div class="popup2">
+                <p> TAN TAN TANNNNNNN!!!!  TAN TAN TANNNNN!!!  TAN TAN TANNNNNNNN!!!  DIVA ARRASOU!</p>
+                <p>Agora leia essa cartinha que foi feita com muito carinho igual todas as outras!</p>
+            </div>
+        </div>
+
+        <div id="popupOverlay8" class="overlay2">
+            <div class="popup3">
+                <p> Começando essa cartinha igual às outras: dizendo que não sei nem o que dizer! Só sei que nesses últimos DUZENTOSSSS ANOSSSS eu fui MUITOOO feliz!!!!</p>
+                <p>E essa felicidade toda não sei se tu sabe mas ela chegou quando tu me beijou! 
+                Desde então, tenho pensado em você 10 vezes mais do que eu já pensava antes da bitoca. 
+                Me senti muito criativa tendo essa ideia e usando outra vez meus conhecimentos 
+                (não muito expandidos) de informática, e ainda é numa parte que tu gosta também né... 
+                Inclusive por favor não olhar estruturas do html pois não sei fazer! Mas se quiser olhar
+                o css e o javascript pode meter bala pq eu e meu amigo chatgpt e meu outro amigo gemini botamos pra torar!
+                </p>
+                <p>Bom, voltando ao assunto nós, essa é só mais uma carta pra eu dizer o quanto eu amo você e o quanto eu sou sortuda
+                por te ter como namorada. E também pra reforçar pra tu que todos os dias penso em nós casando, tendo nosso cantinho,
+                nosso lar, nossos filhos (de duas e de quatro patas). Só penso no futuro lindo que desejo ter com você. Mesmo que possa demorar,
+                eu tenho é que um dia nós chega lá! Não vou desistir de você, nem de nós, e espero que você também não desista, pra que a gente
+                um dia chegue lá mesmo. Mas, caso aconteça alguma coisa, você pode me contar e eu também vou te contar. Só que provavalmente só
+                vou estar contando que amo você, porque não consigo nem me imaginar não te amando!
+                </p>
+                <p>Tu já sabe que sou doida maluca arriada sem parafuso sem pneu sem estruturas ablublé todinha completamente apaixonada por tu né,
+                então dei só essa leve reforçada, mas se um dia você tiver dúvidas, me pergunta! Te digo quantas vezes você quiser.
+                Tô digitando isso dia 04/04/2025, pensando no que mais escrever, acho que por hoje vou dar uma pausa pq to com as costas lascadas
+                de tanto ficar fazendo essas paginas html! Te falei que tava assistindo mas desde que acordei (9h e pouco) até agr (15h45) tô fazendo
+                isso, então amanhã escrevo mais! Xero 😘. 
+                </p>
+                <button id= "botão2" class="popup-button2" onclick="fecharCarta()">FECHAR</button>
+
+            </div>
+        </div>
+
+        <button id="voltarTudo" class="botaoVoltar" onclick="voltarAoInicio()">VER TUDOOO DE NOVO</button>
+ 
+        <span id="bloqueado" class="material-symbols-outlined">mail_lock</span>
+        <span id="desbloqueado" class="material-symbols-outlined">mark_email_read</span>
+        <span id="abrir" class="material-symbols-outlined">drafts</span>
+
    </main>
     
    <script src="script3.js"></script>
