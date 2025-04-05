@@ -15,22 +15,22 @@ img {
     height: auto;
     border-radius: 70px;
     border-style: double;
-    border-color: rgb(59, 43, 8);
+    border-color: rgb(4, 5, 77);
     border-width: 2px;
     cursor: pointer; 
 }
 h1{
     position: relative;
-    margin-left: 452px;
+    margin-left: 400px;
     margin-top: 20px;
     font-weight: bolder;
-    font-size: 45px;
+    font-size: 60px;
     font-family: "Barrio", system-ui;
-    color: rgb(65, 60, 60)  ;
+    color: rgb(4, 5, 77)  ;
 }
 .material-symbols-outlined {
     position: absolute;
-    margin-top: 60px;
+    margin-top: 80px;
     margin-left: 615px;
     font-size: 70px;  /* Tamanho do ícone */
     color: red;       /* Cor do ícone */
@@ -44,7 +44,7 @@ h1{
     margin-left: 5px;
     margin-top: 7px;
     margin-right: 1250px;
-    color: rgb(2, 2, 2);
+    color:rgb(4, 5, 77);
     font-family: "Barrio", system-ui;
     font-size: 30px;
     text-align: center;
@@ -53,14 +53,14 @@ h1{
     position: relative;
     margin-top: 0;
     height: 50px;
-    background-color: rgb(17, 123, 172);
+    background-color: rgb(255, 255, 255);
     border-radius: 50px;
  }
  h4{
     position: absolute;
     margin-left: 1280px;
     margin-top: 7px;
-    color: rgb(2, 2, 2);
+    color:rgb(4, 5, 77);
     font-family: "Barrio", system-ui;
     font-size: 30px;
     text-align: center;

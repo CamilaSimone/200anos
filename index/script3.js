@@ -166,7 +166,7 @@ function fecharCarta(){
     let msg = document.getElementById("popupOverlay8");
         msg.style.display = "none";    
     document.getElementById("voltarTudo").style.visibility = 'visible';
-    frase = document.getElementById("frase").textContent = "PAraBÉns bebê!!! Diva sempre acertando👏👏👏👏👏👏👏👏👏👏👏👏👏👏👏"
+    frase = document.getElementById("frase").textContent = "PAraBÉns bebê!!! Lacra sempre acertando👏👏👏👏👏👏👏👏👏👏👏👏👏👏👏"
     document.getElementById("abrirPopup").style.visibility = 'hidden';
     document.getElementById("abrirPopup2").style.visibility = 'hidden';
     document.getElementById("abrirPopup3").style.visibility = 'hidden';

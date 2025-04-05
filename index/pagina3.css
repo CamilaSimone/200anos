@@ -4,7 +4,7 @@
    margin-top: -11%;
    margin-left: 320px;
    font-size: 690px;
-   color: red;
+   color: rgb(4, 5, 77);
    font-variation-settings:
     'FILL' 0,
     'wght' 150,
@@ -50,8 +50,9 @@ button {
    margin-bottom: 40px;
    border-radius: 20px;
    font-size: 35px;
-   background-color: rgb(17, 123, 172);
-   border-color: white;
+   color: rgb(4, 5, 77);
+   background-color: rgb(255, 255, 255);
+   border-color: rgb(4, 5, 77);
 }
 main {
    position: absolute;
@@ -63,11 +64,12 @@ h1 {
  font-size: 34px;
  margin-left: 335px;
  margin-right: 330px;
- background-color:  rgb(17, 123, 172);
- border-radius: 25px;
- border-color: white;
- border-width: 5px;
- color: rgb(27, 25, 25);
+ background-color:  rgb(255, 255, 255);
+ border-style: double;
+ border-color: rgb(4, 5, 77);
+ border-width: 2px;
+ border-radius: 5px;
+ color: rgb(4, 5, 77);
 font-family: "Barrio", system-ui;
 }
 body {
@@ -78,7 +80,7 @@ h3 {
    position: relative;
    margin-left: 22px;
    margin-top: -4.5%;
-   color: rgb(27, 25, 25);
+   color: rgb(4, 5, 77);
    font-family: "Barrio", system-ui;
    font-size: 28px; 
 }
