@@ -31,7 +31,7 @@ h1{
 .material-symbols-outlined {
     position: absolute;
     margin-top: 80px;
-    margin-left: 615px;
+    margin-left: 625px;
     font-size: 70px;  /* Tamanho do ícone */
     color: red;       /* Cor do ícone */
     font-variation-settings:
@@ -68,4 +68,12 @@ h1{
  }
  body{
     background-color: lightblue;
+ }
+ h5{
+    position: absolute;
+    margin-top: 11px;
+    font-size: 24px;
+    color:rgb(4, 5, 77);
+    font-family: "Barrio", system-ui;
+    margin-left: 550px;
  }

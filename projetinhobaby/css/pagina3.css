@@ -24,9 +24,9 @@ header {
 .overlay {
    display: none; /* Escondida por padrão */
    position: absolute;
-   top: 0;
-   left: 0;
-   width: 70%;
+   margin-top: -100%;
+   margin-left: 550px;
+   width: 100%;
    height: 90%;
    justify-content: center;
    text-align: center;
@@ -38,15 +38,17 @@ header {
    background: #ffffff;
    padding: 10px;
    margin-left: 25px;
+   margin-top: 10%;
    border-radius: 10px;
    text-align: center;
    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
    width: 100px;
 }
+
 button {
    display: block;
    margin-left: 10px;
-   margin-top: 55px;
+   margin-top: 60px;
    margin-bottom: 40px;
    border-radius: 20px;
    font-size: 35px;
@@ -54,13 +56,14 @@ button {
    background-color: rgb(255, 255, 255);
    border-color: rgb(4, 5, 77);
 }
+
 main {
    position: absolute;
    margin-top: -7%;
 }
 
 h1 {
- margin-top: -5%;
+ margin-top: -3%;
  font-size: 34px;
  margin-left: 335px;
  margin-right: 330px;
@@ -72,6 +75,7 @@ h1 {
  color: rgb(4, 5, 77);
 font-family: "Barrio", system-ui;
 }
+
 body {
    background-color: lightblue;
 }
@@ -79,7 +83,7 @@ body {
 h3 {
    position: relative;
    margin-left: 22px;
-   margin-top: -4.5%;
+   margin-top: -0.5%;
    color: rgb(4, 5, 77);
    font-family: "Barrio", system-ui;
    font-size: 28px; 
@@ -99,7 +103,7 @@ h3 {
    color: white;
    cursor: pointer;
    border-radius: 5px;
-   margin-left: 49px;
+   margin-left: 80px;
    font-size: 15px;
 }
 input {
@@ -107,7 +111,7 @@ input {
    margin-top: 10px;
    display: block;
    width: 70%;
-   margin-left: 25px;
+   margin-left: 35px;
    text-align: center;
 }
 .error {
@@ -153,27 +157,106 @@ audio {
 }
 .botaoVoltar {
    position: absolute;
-   margin-top: 320px;
-   padding: 5px 10px;
-   width: 220px;
-   height: 50px;
+   margin-top: 300px;
+   padding: 1px 5px;
+   width: 420px;
+   height: 100px;
    align-items: center;
    background-color: blue;
    color: white;
+   font-family: "Barrio", system-ui;
    cursor: pointer;
    border-radius: 10px;
-   margin-left: 565px;
-   font-size: 15px;
+   margin-left: 460px;
+   font-size: 40px;
 }
 .popup-button2 {
    margin-top: 10px;
    padding: 5px 10px;
    align-items: center;
-   background-color: blue;
+   background-color: rgb(4, 5, 77);
    color: white;
    cursor: pointer;
    border-radius: 10px;
-   margin-left: 90px;
+   margin-left: 150px;
    font-size: 15px;
+}
+.botoesDireita{
+   position: absolute;
+   margin-left: 1120px;
+   display: block;
+   margin-top: 12%;
+   margin-bottom: 40px;
+   border-radius: 20px;
+   font-size: 28px;
+   color: rgb(4, 5, 77);
+   border-color: rgb(4, 5, 77);
+   width: 20px;
+}
+.botoesEsquerda{
+   position: absolute;
+   margin-left: 90px;
+   display: block;
+   margin-top: 90px;
+   margin-bottom: 40px;
+   border-radius: 20px;
+   font-size: 28px;
+   color: rgb(4, 5, 77);
+   border-color: rgb(4, 5, 77);
+   width: 20px;
+}
+
+.overlay3 {
+   display: none; /* Escondida por padrão */
+   position: absolute;
+   margin-top: -1300%;
+   margin-left: 410px;
+   width: 300px;
+   height: 90%;
+   justify-content: center;
+   text-align: center;
+}
+
+.overlay4 {
+   display: none; /* Escondida por padrão */
+   position: absolute;
+   margin-top: -1690%;
+   margin-left: 410px;
+   width: 300px;
+   height: 90%;
+   justify-content: center;
+   text-align: center;
+}
+.overlay5 {
+   display: none; /* Escondida por padrão */
+   position: absolute;
+   margin-top: -1300%;
+   margin-left: -615px;
+   width: 300px;
+   height: 90%;
+   justify-content: center;
+   text-align: center;
+}
+
+.overlay6 {
+   display: none; /* Escondida por padrão */
+   position: absolute;
+   margin-top: -1860%;
+   margin-left: -610px;
+   width: 300px;
+   height: 90%;
+   justify-content: center;
+   text-align: center;
+}
+
+.overlay7 {
+   display: none; /* Escondida por padrão */
+   position: absolute;
+   margin-top: -330%;
+   margin-left: -700px;
+   width: 450px;
+   height: 90%;
+   justify-content: center;
+   text-align: center;
 }
 

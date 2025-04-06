@@ -21,21 +21,27 @@ let frase = document.getElementById("frase").textContent = "Desbloqueie o cadead
 
 function abrirPopup() {
     let msg = document.getElementById("popupOverlay");
+    document.getElementById("bloqueado").style.visibility = 'hidden';
     msg.style.display = "flex"; 
         
         setTimeout(function() {
             msg.style.display = "none";
         }, 1500); // 1500 milissegundos = 1 segundo e meio
+        setTimeout(function(){
+            document.getElementById("bloqueado").style.visibility = 'visible';
+        }, 1500);
 };
 
 function abrirPopup2() {
     let msg = document.getElementById("popupOverlay2");
+    document.getElementById("bloqueado").style.visibility = 'hidden';
     msg.style.display = "flex"; 
 
 };
 
 function abrirPopup3() {
     let senhaDigitada1 = document.getElementById("senhaInput1").value;
+    document.getElementById("bloqueado").style.visibility = 'hidden';
     if (senhaDigitada1 == senhaCorreta1){
     let msg = document.getElementById("popupOverlay3");
     msg.style.display = "flex"; 
@@ -43,12 +49,17 @@ function abrirPopup3() {
         setTimeout(function() {
             msg.style.display = "none";
         }, 1500); // 1500 milissegundos = 1 segundo e meio
+
+        setTimeout(function(){
+            document.getElementById("bloqueado").style.visibility = 'visible';
+        }, 1500)
     }
 };
 
 function abrirPopup4() {
     let mensagemErro = document.getElementById("mensagemErro");
     let senhaDigitada2 = document.getElementById("senhaInput2").value;
+    document.getElementById("bloqueado").style.visibility = 'hidden';
     if (senhaDigitada2 == senhaCorreta2){
 
     let msg = document.getElementById("popupOverlay4");
@@ -57,6 +68,10 @@ function abrirPopup4() {
         setTimeout(function() {
             msg.style.display = "none";
         }, 1500); // 1500 milissegundos = 1 segundo e meio
+
+        setTimeout(function(){
+            document.getElementById("bloqueado").style.visibility = 'visible';
+        }, 1500)
     }
     else {
     mensagemErro.textContent = "Senha incorreta! Tente novamente.";
@@ -65,16 +80,17 @@ function abrirPopup4() {
 
 function abrirPopup5() {
     let senhaDigitada1 = document.getElementById("senhaInput1").value;
+    document.getElementById("bloqueado").style.visibility = 'hidden';
     if (senhaDigitada1 == senhaCorreta1){
         let msg = document.getElementById("popupOverlay5");
-            msg.style.display = "flex"; 
-        
+            msg.style.display = "flex";         
     }           
 };
 
 function abrirPopup6() {
 
     let senhaDigitada2 = document.getElementById("senhaInput2").value;
+    document.getElementById("bloqueado").style.visibility = 'hidden';
     if (senhaDigitada2 == senhaCorreta2){
         let msg = document.getElementById("popupOverlay6");
         msg.style.display = "flex"; 
@@ -123,6 +139,7 @@ function verificarSenha() {
     if (senhaDigitada1 == senhaCorreta1) {
         document.getElementById("popupOverlay2").style.display = "none";
         mensagemErro.textContent = ""; // Limpa a mensagem de erro
+        document.getElementById("bloqueado").style.visibility = 'visible';
     } else {
         mensagemErro.textContent = "Senha incorreta! Tente novamente.";
     }
@@ -135,6 +152,7 @@ function verificarSenha2() {
     if (senhaDigitada2 == senhaCorreta2) {
         document.getElementById("popupOverlay5").style.display = "none";
         mensagemErro.textContent = ""; // Limpa a mensagem de erro
+        document.getElementById("bloqueado").style.visibility = 'visible';
     } else {
         mensagemErro.textContent = "Senha incorreta! Tente novamente.";
     }
@@ -155,6 +173,7 @@ function verificarSenha3() {
     if (senhaDigitada3 == senhaCorreta3) {
         document.getElementById("popupOverlay6").style.display = "none";
         mensagemErro.textContent = ""; // Limpa a mensagem de erro
+        document.getElementById("bloqueado").style.visibility = 'visible';
         tocarAudio();
         abrirPopup7();
     } else {
@@ -166,7 +185,7 @@ function fecharCarta(){
     let msg = document.getElementById("popupOverlay8");
         msg.style.display = "none";    
     document.getElementById("voltarTudo").style.visibility = 'visible';
-    frase = document.getElementById("frase").textContent = "PAraBÉns bebê!!! Lacra sempre acertando👏👏👏👏👏👏👏👏👏👏👏👏👏👏👏"
+    frase = document.getElementById("frase").textContent = "PAraBÉns bebê!!! Sempre acertando👏👏"
     document.getElementById("abrirPopup").style.visibility = 'hidden';
     document.getElementById("abrirPopup2").style.visibility = 'hidden';
     document.getElementById("abrirPopup3").style.visibility = 'hidden';

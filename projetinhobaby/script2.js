@@ -4,4 +4,3 @@ document.getElementById("texto1").onclick = function() {
 document.getElementById("texto2").onclick = function() {
     window.location.href = "index3.html"; // Substitua pelo link desejado
 };
-
