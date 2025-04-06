@@ -27,6 +27,7 @@ function abrirPopup() {
         setTimeout(function() {
             msg.style.display = "none";
         }, 1500); // 1500 milissegundos = 1 segundo e meio
+
         setTimeout(function(){
             document.getElementById("bloqueado").style.visibility = 'visible';
         }, 1500);
@@ -36,15 +37,14 @@ function abrirPopup2() {
     let msg = document.getElementById("popupOverlay2");
     document.getElementById("bloqueado").style.visibility = 'hidden';
     msg.style.display = "flex"; 
-
 };
 
 function abrirPopup3() {
     let senhaDigitada1 = document.getElementById("senhaInput1").value;
-    document.getElementById("bloqueado").style.visibility = 'hidden';
     if (senhaDigitada1 == senhaCorreta1){
     let msg = document.getElementById("popupOverlay3");
-    msg.style.display = "flex"; 
+    msg.style.display = "flex";
+    document.getElementById("bloqueado").style.visibility = 'hidden'; 
         
         setTimeout(function() {
             msg.style.display = "none";
@@ -57,14 +57,13 @@ function abrirPopup3() {
 };
 
 function abrirPopup4() {
-    let mensagemErro = document.getElementById("mensagemErro");
     let senhaDigitada2 = document.getElementById("senhaInput2").value;
-    document.getElementById("bloqueado").style.visibility = 'hidden';
     if (senhaDigitada2 == senhaCorreta2){
 
     let msg = document.getElementById("popupOverlay4");
     msg.style.display = "flex"; 
-        
+    document.getElementById("bloqueado").style.visibility = 'hidden';
+
         setTimeout(function() {
             msg.style.display = "none";
         }, 1500); // 1500 milissegundos = 1 segundo e meio
@@ -73,29 +72,28 @@ function abrirPopup4() {
             document.getElementById("bloqueado").style.visibility = 'visible';
         }, 1500)
     }
-    else {
-    mensagemErro.textContent = "Senha incorreta! Tente novamente.";
-    }
+    
 };
 
 function abrirPopup5() {
     let senhaDigitada1 = document.getElementById("senhaInput1").value;
-    document.getElementById("bloqueado").style.visibility = 'hidden';
     if (senhaDigitada1 == senhaCorreta1){
         let msg = document.getElementById("popupOverlay5");
-            msg.style.display = "flex";         
-    }           
+            msg.style.display = "flex";
+            document.getElementById("bloqueado").style.visibility = 'hidden';         
+    }         
 };
 
 function abrirPopup6() {
-
+    let senhaDigitada1 = document.getElementById("senhaInput1").value;
+    if (senhaDigitada1 == senhaCorreta1){
     let senhaDigitada2 = document.getElementById("senhaInput2").value;
     document.getElementById("bloqueado").style.visibility = 'hidden';
     if (senhaDigitada2 == senhaCorreta2){
         let msg = document.getElementById("popupOverlay6");
         msg.style.display = "flex"; 
     }        
-    
+    }
 };
 
 function abrirPopup7() {
@@ -141,20 +139,20 @@ function verificarSenha() {
         mensagemErro.textContent = ""; // Limpa a mensagem de erro
         document.getElementById("bloqueado").style.visibility = 'visible';
     } else {
-        mensagemErro.textContent = "Senha incorreta! Tente novamente.";
+        mensagemErro.textContent = "Senha incorreta, tenta de novo bebê";
     }
 }
 
 function verificarSenha2() {
 
-    let mensagemErro = document.getElementById("mensagemErro");
+    let mensagemErro2 = document.getElementById("mensagemErro2");
     let senhaDigitada2 = document.getElementById("senhaInput2").value;
     if (senhaDigitada2 == senhaCorreta2) {
         document.getElementById("popupOverlay5").style.display = "none";
         mensagemErro.textContent = ""; // Limpa a mensagem de erro
         document.getElementById("bloqueado").style.visibility = 'visible';
     } else {
-        mensagemErro.textContent = "Senha incorreta! Tente novamente.";
+        mensagemErro2.textContent = "Dá uma pesquisadinha rápida pre";
     }
 }
 
@@ -168,7 +166,7 @@ function tocarAudio(){
 }
 
 function verificarSenha3() {
-    let mensagemErro = document.getElementById("mensagemErro");
+    let mensagemErro3 = document.getElementById("mensagemErro3");
     let senhaDigitada3 = document.getElementById("senhaInput3").value;
     if (senhaDigitada3 == senhaCorreta3) {
         document.getElementById("popupOverlay6").style.display = "none";
@@ -177,7 +175,7 @@ function verificarSenha3() {
         tocarAudio();
         abrirPopup7();
     } else {
-        mensagemErro.textContent = "Senha incorreta! Tente novamente.";
+        mensagemErro3.textContent = "Pensa mais um pouquinho gatinha";
     }
 }
 
